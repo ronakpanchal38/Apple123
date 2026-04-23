@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <link rel="stylesheet" href="static/css/apple.css">
+</head>
+<body>
+    <!-- <div class="main"> -->
+        <div class="main1">
+            <center><p class="p1">Create Your Apple Account</p></center>
+            <br>
+            <center><p class="p2">One Apple Account is all you need to access all Apple services.
+                        <br>Already have an Apple Account? Sign In
+                    </p>
+            </center>
+            <br>
+            <form action="appledata" method="post" enctype="multipart/form-data">
+                {%csrf_token%}
+               <div class="name">
+                <input type="text" name="fname" placeholder="First Name">
+                <input type="text" name="lname" placeholder="Last Name">
+               </div>
+
+                <!-- 2 -->
+                <div class="country">
+                                    <select name="country" id="" placeholder="Select Country">
+                                        <option>Country/Region</option>
+                                        <option>United States Of America</option>
+                                        <option>India</option>
+                                        <option>Japan</option>
+                                        <option>China</option>
+                                        <option>Australia</option>
+                                    </select>
+                </div>
+                <!-- 3 -->
+                 <div class="birthday">
+					<p class="p3"> Date of Birth</p>
+                    <div class="birthday1">
+                        <select name="Month" id="">
+                            <option value="">Month</option>
+                            <option value="">January</option>
+                            <option value="">February</option>
+                            <option value="">March</option>
+                            <option value="">April</option>
+                            <option value="">May</option>
+                            <option value="">June</option>
+                            <option value="">July</option>
+                            <option value="">August</option>
+                            <option value="">September</option>
+                            <option value="">Octomber</option>
+                            <option value="">November</option>
+                            <option value="">December</option>
+                        </select>
+
+                        <select name="Date" id="">
+                            <option value="">Date</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>w
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                            <option value="">19</option>
+                            <option value="">20</option>
+                            <option value="">21</option>
+                            <option value="">22</option>
+                            <option value="">23</option>
+                            <option value="">24</option>
+                            <option value="">25</option>
+                            <option value="">26</option>
+                            <option value="">27</option>
+                            <option value="">28</option>
+                            <option value="">29</option>
+                            <option value="">30</option>
+                            <option value="">31</option>
+                        </select>
+
+                        <select name="Year" id="">
+                            <option value="">Year</option>
+                            <option value="">2001</option>
+                            <option value="">2002</option>
+                            <option value="">2003</option>
+                            <option value="">2004</option>
+                            <option value="">2005</option>
+                            <option value="">2006</option>
+                            <option value="">2007</option>
+                            <option value="">2008</option>
+                            <option value="">2009</option>
+                            <option value="">2010</option>
+                            <option value="">2011</option>
+                        </select>
+					</div>
+                </div>
+
+                <!-- 4 -->
+                <div class="email">
+                                    <input type="email" name="email" placeholder="name@email.com">
+                </div>
+
+                <!-- 5 -->
+                <div class="password">
+                                    <input type="password"  name="password" placeholder="Password">
+                </div>
+
+                <!-- #6 -->
+                <div class="correct_password">
+                                    <input type="password" name="cpass" placeholder="confirm password">
+                </div>
+
+                <!-- 7 -->
+                <div class="country_code">
+                    <select name="country_code1" id="">
+                        <option value="">+1 United States</option>
+                        <option value="">+44 United Kingdom</option>
+                        <option value="">+971 United Arab Amirates</option>
+                        <option value="">+58 venuzuala</option>
+                        <option value="">+91 India</option>
+                        <option value="">+256 Uganda</option>
+                        <option value="">+380 Ukraine</option>
+                        <option value="">+90 Turkiya</option>
+                        <option value="">+966 Saudi Arabia</option>
+                        <option value="">+66 Thailband</option>
+                    </select>
+                </div>
+
+                <!-- 8 -->
+                <div class="phone">
+                    <input type="phone"  name="phone" placeholder="Phone Number">
+                </div>
+
+                <!-- #9 -->
+                <div class="texts">
+                                    <p class="p4">Be sure to enter a phone number you can always access. It will be used
+                                        <br>to verify your identity any time you sign in on a new device or <br>
+                                        web browser. Messaging or data rates may apply.</p>
+                </div>
+
+                <!-- #10 -->
+                 <div class="verify">
+                    <p class="p5">Verify With :</p>
+                        <div class="text">
+                            <input type="radio" name="select"><h3 class="h3">Text Message</h3>
+                        </div>
+                        <div class="call">
+                            <input type="radio" name="select"><h3 class="h3">Phone Call</h3>
+                        </div>
+                </div>
+
+                <div class="anounce">
+                   <div class="anounce1">
+                        <input type="checkbox" name="announcement"><h3>Announcement</h3>
+                  </div>
+                    <p class="p6">
+                        Receive Apple emails and communications including announcements, <br>
+                        marketing, recommendations, and updates about Apple products, <br>
+                        services and software.
+                    </p>
+                </div>
+
+                <div class="apps">
+                    <div class="anounce2">
+                        <input type="checkbox" name="announcement"><h3>Apps, Music, TV, and More</h3>
+                    </div>
+                    <p class="p7">
+                        Receive Apple emails and communications including new releases, <br>
+                        exclusive content, special offers, and marketing and <br>
+                        recommendations for apps, music, movies, TV, books, podcasts, Apple <br>
+                        Pay, Apple Card and more.
+                    </p>
+                </div>
+                <!-- last -->
+                <input type="submit" value="Continue" class="continue">
+
+            </form>
+        </div>
+    <!-- </div> -->
+</body>
+</html>

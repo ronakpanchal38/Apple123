@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    width:100%;
+    height:200vh;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    font-family:sans-serif;
+}
+
+/* .main{
+    width:60vw;
+    height:200vh;
+    border:1px solid black;
+    box-sizing:border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+} */
+.p1{
+    font-size:40px;
+    font-weight:bolder;
+    font-family: sans-serif;
+}
+.p2{
+    font-size:18px;
+    font-weight:400;
+    font-family: sans-serif;
+}
+.main1{
+    width:50vw;
+    height:165vh;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.name{
+    width:40vw;
+    height:7vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+.name input{
+    width:19.5vw;
+    height:7vh;
+    border-radius:10px;
+    text-align: center;
+}
+.country{
+    width:40vw;
+    height:7vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+.country select{
+    width:40vw;
+    height:7vh;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    border-radius:10px;
+    padding-left: 20px;
+}
+.birthday{
+    width:40vw;
+    height:12vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+.birthday1{
+    width:40vw;
+    height:7vh;
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+
+}
+.birthday1 select{
+    width:13.3vw;
+    height:7vh;
+    border:1px solid black;
+    box-sizing:border-box;
+    border-radius:10px;
+    padding-left: 20px;
+
+}
+.p3{
+    margin-bottom:2vh;
+}
+
+.email,.password,.correct_password{
+    width:40vw;
+    height:7vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+.email input,.password input,.correct_password input{
+    width:40vw;
+    height:7vh;
+    border:1px solid black;
+    box-sizing:border-box;
+    border-radius:10px;
+    padding-left: 20px;
+}
+
+.country_code,.phone{
+    width:40vw;
+    height:7vh;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+
+.country_code select,.phone input{
+    width:40vw;
+    height:7vh;
+    border:1px solid black;
+    box-sizing:border-box;
+    border-radius:10px;
+    padding-left: 20px;
+}
+
+.texts{
+    width:40vw;
+    height:12vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+
+}
+.p4{
+    font-size:18px;
+    font-weight:400;
+    text-align: justify;
+}
+
+.verify{
+    width:40vw;
+    height:13vh;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    display:flex;
+    flex-direction:column;
+    margin-bottom:1.5vh;
+
+}
+.p5{
+    font-size:25px;
+    font-weight:bold;
+}
+.text, .call{
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    padding-left:1vw;
+    margin-top:1.5vh;
+}
+.h3{
+    display:block;
+    font-weight:400;
+}
+
+.anounce{
+    width:40vw;
+    height:18vh;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+.p6{
+    font-size:20px;
+    font-weight:400;
+    color: rgb(151, 147, 147);
+}
+.anounce1{
+    width:40vw;
+    height:3vh;
+    display:flex;
+    flex-direction:row;
+    gap:1vw;
+    margin:0.5vh;
+    /* border:1px solid black; */
+}
+.anounce1 input{
+    width:20px;
+}
+
+.apps{
+    width:40vw;
+    height:19.5vh;
+    /* border:1px solid black;
+    box-sizing:border-box; */
+    margin-bottom:1.5vh;
+}
+
+.anounce2{
+    width:40vw;
+    height:3vh;
+    display:flex;
+    flex-direction:row;
+    gap:1vw;
+    margin:0.5vh;
+    /* border:1px solid black; */
+}
+.anounce2 input{
+    width:20px;
+}
+.p7{
+    font-size:20px;
+    font-weight:400;
+    color: rgb(151, 147, 147);
+}
+.continue{
+    width:40vw;
+    height:7vh;
+    display:block;
+    border:1px solid black;
+    box-sizing:border-box;
+    border-radius:10px;
+    background-color:#0095F6;
+    color:white;
+    font-size:20px;
+    font-weight:bolder;
+    margin-bottom:1.5vh;
+
+}
